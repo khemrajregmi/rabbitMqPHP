@@ -24,12 +24,13 @@ cd phprabbitmq
 docker-compose build
 docker-compose up
 
+4. After sucessfull step 3 , it will start rabbitmq server
+http://localhost:15672/#/
+
+
+
 This will build the Docker images and then start the two Docker containers. The sender container will send a message to the RabbitMQ queue, and the receiver container will receive the message and print it to the console.
 
 Contribute
 Feel free to contribute to this project by submitting pull requests.
 
-License
-This project is licensed under the MIT License.
-
-I hope this helps! Let me know if you have any other questions.
