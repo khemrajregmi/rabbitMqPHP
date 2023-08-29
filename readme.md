@@ -26,6 +26,13 @@ docker-compose up
 
 4. After sucessfull step 3 , it will start rabbitmq server
 http://localhost:15672/#/
+username:guest
+password:guest
+
+
+![Screenshot](src/images/login.png)
+![Screenshot](src/images/rabbitmq.png)
+
 
 
 
