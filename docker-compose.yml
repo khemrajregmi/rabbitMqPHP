@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - 5672:5672
+      - 15672:15672
+
+  sender:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: php sender.php
+
+  receiver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: php receiver.php
